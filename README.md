@@ -33,3 +33,17 @@
 <img width="566" height="131" alt="image" src="https://github.com/user-attachments/assets/8ce24f0b-93df-4dcc-b8f4-e4c83e24a48f" />
 
 <img width="819" height="636" alt="image" src="https://github.com/user-attachments/assets/46c922b2-37cb-48a8-9269-8eba755f4911" />
+
+9. Créer les DTOs et Mappers
+
+<img width="338" height="214" alt="image" src="https://github.com/user-attachments/assets/d0ff367c-7121-40fa-a354-198f583441d1" />
+
+<img width="423" height="186" alt="image" src="https://github.com/user-attachments/assets/c1ebbbee-1d35-4a8a-b3a2-b522002ce1c2" />
+
+<img width="639" height="479" alt="image" src="https://github.com/user-attachments/assets/5c008899-a66b-4b7e-a7df-a470455f2064" />
+
+10. Créer la couche Service (métier) et du micro service
+
+<img width="733" height="384" alt="image" src="https://github.com/user-attachments/assets/4828358b-e6b7-4a3c-92ca-238d904192eb" />
+
+
