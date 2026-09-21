@@ -28,5 +28,8 @@
 
    <img width="1036" height="573" alt="image" src="https://github.com/user-attachments/assets/c61bffb4-b557-4201-a7f8-336b00795227" />
 
+8. Exposer une API Restful en utilisant Spring Data Rest en exploitant des projections
 
+<img width="566" height="131" alt="image" src="https://github.com/user-attachments/assets/8ce24f0b-93df-4dcc-b8f4-e4c83e24a48f" />
 
+<img width="819" height="636" alt="image" src="https://github.com/user-attachments/assets/46c922b2-37cb-48a8-9269-8eba755f4911" />
