@@ -3,7 +3,9 @@ package org.sid.bank_account_service.web;
 import org.sid.bank_account_service.dto.BankAccountRequestDTO;
 import org.sid.bank_account_service.dto.BankAccountResponseDTO;
 import org.sid.bank_account_service.entities.BankAccount;
+import org.sid.bank_account_service.entities.Customer;
 import org.sid.bank_account_service.repositories.BankAccountRepository;
+import org.sid.bank_account_service.repositories.CustomerRepository;
 import org.sid.bank_account_service.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.graphql.data.method.annotation.Argument;
@@ -19,6 +21,8 @@ public class BankAccountGraphQLController {
     @Autowired
     private BankAccountRepository bankAccountRepository;
     @Autowired
+    private CustomerRepository customerRepository;
+    @Autowired
     private AccountService accountService;
 
     @QueryMapping
@@ -30,6 +34,11 @@ public class BankAccountGraphQLController {
     public BankAccount accountById(@Argument String id){
         return bankAccountRepository.findById(id)
                 .orElseThrow(()->new RuntimeException(String.format("Account %s not found",id)));
+    }
+
+    @QueryMapping
+    public List<Customer> customers(){
+        return customerRepository.findAll();
     }
 
     @MutationMapping
