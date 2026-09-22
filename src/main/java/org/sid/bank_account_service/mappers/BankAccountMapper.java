@@ -21,6 +21,16 @@ public class BankAccountMapper {
                 .build();
     }
 
+    public static BankAccount fromDTO(BankAccountRequestDTO dto, String id) {
+        return BankAccount.builder()
+                .id(id)
+                .createdAt(new Date())
+                .balance(dto.getBalance())
+                .type(dto.getType())
+                .currency(dto.getCurrency())
+                .build();
+    }
+
     public static BankAccountResponseDTO fromEntity(BankAccount bankAccount) {
         return BankAccountResponseDTO.builder()
                 .id(bankAccount.getId())

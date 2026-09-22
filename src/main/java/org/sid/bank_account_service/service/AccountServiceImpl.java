@@ -26,4 +26,19 @@ public class AccountServiceImpl implements AccountService {
 
         return bankAccountResponseDTO;
     }
+
+    @Override
+    public BankAccountResponseDTO updateAccount(String id, BankAccountRequestDTO bankAccountDTO) {
+
+        BankAccount bankAccount = mapper.fromDTO(bankAccountDTO, id);
+        BankAccount saveBankAccount = bankAccountRepository.save(bankAccount);
+        BankAccountResponseDTO bankAccountResponseDTO = mapper.fromEntity(saveBankAccount);
+
+        return bankAccountResponseDTO;
+    }
+
+    @Override
+    public void deleteAccount(String id) {
+        bankAccountRepository.deleteById(id);
+    }
 }
